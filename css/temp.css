@@ -1,0 +1,188 @@
+@font-face {
+    font-family: kbdunktank;
+    src: url(/fonts/KBDunkTank.ttf);
+}
+:root {
+    --red: #FF2821;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    color: #333;
+    background-color: rgba(234, 250, 252, 0.8);
+    font-family: Barlow, Lato, sans-serif;
+    font-size: clamp(1.00rem, calc(0.87rem + 0.65vw), 1.38rem);
+    line-height: 1.5;
+}
+
+.container {
+    border-radius: 2em;
+}
+.content {
+    max-width: 1000px;
+    margin: 1em auto 6em auto;
+    padding: 1em;
+
+}
+header {
+    background-image: radial-gradient(circle at 50% -20.71%, #c6ffe9 0, #b3ffe6 10%, #9df9e4 20%, #84f2e2 30%, #64e9e1 40%, #35e0e0 50%, #00d6e0 60%, #00cde2 70%, #00c5e6 80%, #00bde9 90%, #00b5ed 100%);
+    height: 100vh;
+    padding-inline: 1em;
+    display: grid;
+    place-content: center;
+    background-color: rgb(70, 155, 220);
+}
+
+.headline {
+    font-family: DynaPuff, cursive;
+    font-size: 3.4em;
+    color: #fff;
+    text-align: center;
+    max-width: 21ch;
+}
+.headline img {
+    max-width: 80vw;
+}
+footer {
+    padding: 3em 1em 3em 1em;
+    background-color: #00C2E7;
+}
+.footer-inner {
+    max-width: 1000px;
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 1em;
+    color: #fff;
+}
+footer p {
+    font-size: 0.8em;
+}
+footer h3 {
+    /* color: #fff; */
+    margin: 0;
+}
+.copyright {
+    margin-top: 3em;
+    grid-column: span 2;
+    text-align: center;
+}
+.kb {
+    font-family: kbdunktank, cursive;
+}
+
+h1,
+h2,
+h3 {
+    text-wrap: balance;
+    font-family: "DynaPuff", cursive;
+    color: var(--red);
+}
+h1 {
+    font-size: 3em;
+}
+h2 {
+    font-size: 2.2em;
+    margin: 2em auto 0.25em auto;
+}
+
+.content > p:first-of-type {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+
+.new-website {
+    margin-top: 6em;
+    padding: 1em;
+    border: solid 6px currentColor;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 0.5em;
+}
+
+.button {
+    padding: 0.5em 1em;
+    color: #fff;
+    background-color: #ff2821;
+    border-radius: 0.5em;
+    font-size: 1.5rem;
+    font-family: Barlow, Lato, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+
+/* ------ Button style from ui-buttons.web.app */
+
+.btn-42,
+.btn-42 *,
+.btn-42 :after,
+.btn-42 :before,
+.btn-42:after,
+.btn-42:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-42 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: var(--red);
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  line-height: 1.5;
+  margin: 1em auto;
+  -webkit-mask-image: -webkit-radial-gradient(var(--red), #fff);
+  padding: 0;
+}
+.btn-42:disabled {
+  cursor: default;
+}
+.btn-42:-moz-focusring {
+  outline: auto;
+}
+.btn-42 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-42 [hidden] {
+  display: none;
+}
+.btn-42 {
+  border-radius: 999px;
+  box-sizing: border-box;
+  display: block;
+  width: fit-content;
+  font-weight: 900;
+  -webkit-mask-image: none;
+  padding: 1rem 3rem;
+  position: relative;
+  text-transform: uppercase;
+}
+.btn-42 span {
+  mix-blend-mode: difference;
+}
+.btn-42:before {
+  --thickness: 4px;
+  border: var(--thickness) solid #fff;
+  border-radius: 999px;
+  content: "";
+  inset: calc(var(--thickness) * -1);
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  transform: scale(1.3);
+  transition: transform 0.2s, opacity 0.2s;
+}
+.btn-42:hover:before {
+  opacity: 1;
+  transform: scale(1);
+}
+.btn-42:hover {
+  background-color: transparent;
+}
